@@ -76,7 +76,7 @@ function drawOrientation() {
     context.beginPath();                        // 描画開始
     context.moveTo(centerX, centerY);           // 中心に移動
     // 線を引く（cosでx座標、sinでy座標が得られる。長さradiusを掛ける。-90度すると真上に向く。）
-    context.lineTo(centerX + Math.cos(radianAlpha - Math.PI / 2) * radius,
+    context.lineTo(centerX - Math.cos(radianAlpha - Math.PI / 2) * radius,
                    centerY + Math.sin(radianAlpha - Math.PI / 2) * radius);
     context.strokeStyle = "rgb(255, 0, 0)";     // 針の線の色
     context.lineWidth = 5;                      // 線の太さ
